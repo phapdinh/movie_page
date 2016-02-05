@@ -8,7 +8,7 @@ batman = media.Movie("The Dark Knight Rises",
 "https://youtu.be/g8evyE9TuYk")
 
 lion = media.Movie("The Lion King",
-"Semba grows up to stop Car",
+"Semba grows up to stop Scar",
 "https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/The_Lion_King_poster.jpg/220px-The_Lion_King_poster.jpg",
 "https://youtu.be/jOIu472cCq0")
 
