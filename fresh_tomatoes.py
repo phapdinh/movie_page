@@ -6,7 +6,7 @@ import re
 main_page_head = '''
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>Movie Trailers!</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -53,6 +53,9 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+		.img-responsive {
+			height: 50px;
+		}
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -106,7 +109,10 @@ main_page_content = '''
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
-          </div>
+		  </div>
+		  <a href="http://www.imdb.com/" class="nav navbar-nav navbar-right">
+			<img src="https://pbs.twimg.com/profile_images/780796992611942405/qj7ytv9v_400x400.jpg" class="img-responsive">
+		  </a>
         </div>
       </div>
     </div>
@@ -146,7 +152,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
   # Create or overwrite the output file
-  output_file = open('fresh_tomatoes.html', 'w')
+  output_file = open('index.html', 'w')
 
   # Replace the placeholder for the movie tiles with the actual dynamically generated content
   rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
