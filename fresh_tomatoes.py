@@ -53,6 +53,9 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+		.img-responsive {
+			height: 50px;
+		}
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -106,10 +109,10 @@ main_page_content = '''
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
-			<a class="navbar-brand" href="http://www.imdb.com/">
-				<img src="https://pbs.twimg.com/profile_images/780796992611942405/qj7ytv9v_400x400.jpg" class="img-rounded pull-right" >
-			</a>
 		  </div>
+		  <a href="http://www.imdb.com/" class="nav navbar-nav navbar-right">
+			<img src="https://pbs.twimg.com/profile_images/780796992611942405/qj7ytv9v_400x400.jpg" class="img-responsive">
+		  </a>
         </div>
       </div>
     </div>
