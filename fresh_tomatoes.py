@@ -6,7 +6,7 @@ import re
 main_page_head = '''
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>Movie Trailers!</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -106,7 +106,10 @@ main_page_content = '''
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
-          </div>
+			<a class="navbar-brand">
+				<img src="https://pbs.twimg.com/profile_images/780796992611942405/qj7ytv9v_400x400.jpg" class="img-rounded pull-right" >
+			</a>
+		  </div>
         </div>
       </div>
     </div>
